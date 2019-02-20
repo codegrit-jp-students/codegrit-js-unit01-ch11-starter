@@ -14,7 +14,7 @@ openButton.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);
 
 // モーダル以外の場所クリックのイベントリスナー
-addEventListener('click', outsideClick)
+addEventListener('click', outsideClick);
 
 // モーダルオープンの関数
 function openModal(){
@@ -28,7 +28,7 @@ function closeModal(){
 
 // モーダル以外がクリックされた時に閉じる関数
 function outsideClick(e){
-  if(e.target == modal) {
+  if (e.target == modal) {
     modal.style.display = 'none';
   }
 }
